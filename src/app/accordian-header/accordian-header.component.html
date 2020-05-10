@@ -1,0 +1,52 @@
+<ngb-accordion #a="ngbAccordion" activeIds="custom-panel-1">
+  <ngb-panel id="custom-panel-1">
+    <ng-template ngbPanelHeader let-opened="opened">
+      <div class="d-flex align-items-center justify-content-between">
+        <h5 class="m-0">Module - OFF</h5>
+        <button ngbPanelToggle class="btn btn-link p-0"><img src="/assets/images/toggle.jpg" width =40 height=40 ></button>
+      </div>
+    </ng-template>
+    <ng-template ngbPanelContent>
+      <form>
+        <div class="form-group">
+          <label >SFD Review :</label>
+          <input type="text" class="form-control" id="sfdReview" aria-describedby="sfdReviewHelp" placeholder="Enter file path">
+          <small id="sfdReviewHelp" class="form-text text-muted">Enter sharepoint path for SFD Review sheet</small>
+        </div>
+        <div class="form-group">
+          <label >Design Review :</label>
+          <input type="text" class="form-control" id="designReview" aria-describedby="designReviewHelp" placeholder="Enter file path">
+          <small id="designReviewHelp" class="form-text text-muted">Enter sharepoint path for Design Review sheet</small>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </ng-template>
+  </ngb-panel>
+  <ngb-panel>
+    <ng-template ngbPanelHeader>
+      <div class="d-flex align-items-center justify-content-between">
+        <h5 class="m-0">Module - REFCOM</h5>
+        <button ngbPanelToggle class="btn btn-link p-0"><img src="/assets/images/toggle.jpg" width =40 height=40 ></button>
+      </div>
+    </ng-template>
+    <ng-template ngbPanelContent>
+     REFCOM Module Panel
+    </ng-template>
+  </ngb-panel>
+  <ngb-panel>
+    <ng-template ngbPanelHeader>
+      <div class="d-flex align-items-center justify-content-between">
+        <h5 class="m-0">Module - GAV</h5>
+        <button ngbPanelToggle class="btn btn-link p-0"><img src="/assets/images/toggle.jpg" width =40 height=40 ></button>
+      </div>
+    </ng-template>
+    <ng-template ngbPanelContent>
+     GAV Module Panel
+    </ng-template>
+  </ngb-panel>
+  
+</ngb-accordion>
+<div >
+  <button type="button" class="btn btn-info" (click)="a.expandAll()">Expand all</button>
+  <button type="button" class="btn btn-danger" (click)="a.collapseAll()">Collapse all</button>
+</div>
