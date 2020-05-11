@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AccordianHeaderComponent } from './accordian-header.component';
+import { FilePanelComponent } from './file-panel.component';
 
-describe('AccordianHeaderComponent', () => {
-  let component: AccordianHeaderComponent;
-  let fixture: ComponentFixture<AccordianHeaderComponent>;
+describe('FilePanelComponent', () => {
+  let component: FilePanelComponent;
+  let fixture: ComponentFixture<FilePanelComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AccordianHeaderComponent ]
+      declarations: [ FilePanelComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AccordianHeaderComponent);
+    fixture = TestBed.createComponent(FilePanelComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

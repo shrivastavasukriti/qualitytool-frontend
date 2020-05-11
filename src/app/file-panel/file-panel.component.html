@@ -7,15 +7,15 @@
       </div>
     </ng-template>
     <ng-template ngbPanelContent>
-      <form>
+      <form (ngSubmit)="onSubmit()">
         <div class="form-group">
           <label >SFD Review :</label>
-          <input type="text" class="form-control" id="sfdReview" aria-describedby="sfdReviewHelp" placeholder="Enter file path">
+          <input type="text" class="form-control" name="sfdReview" [(ngModel)]="files.sfdReviewFilePath" aria-describedby="sfdReviewHelp" placeholder="Enter file path">
           <small id="sfdReviewHelp" class="form-text text-muted">Enter sharepoint path for SFD Review sheet</small>
         </div>
         <div class="form-group">
           <label >Design Review :</label>
-          <input type="text" class="form-control" id="designReview" aria-describedby="designReviewHelp" placeholder="Enter file path">
+          <input type="text" class="form-control" name="designReview" [(ngModel)]="files.designReviewFilePath" aria-describedby="designReviewHelp" placeholder="Enter file path">
           <small id="designReviewHelp" class="form-text text-muted">Enter sharepoint path for Design Review sheet</small>
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
