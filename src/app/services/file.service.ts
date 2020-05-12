@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class FileService {
   
-  private baseUrl = 'http://localhost:9090/quality/getFilePath';
+  private baseUrl = '/quality/getFilePath';
   constructor(private http: HttpClient) { }
 
   getFilePath(file: Object): Observable<Object> {
