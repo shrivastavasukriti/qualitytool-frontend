@@ -1,6 +1,6 @@
 var HttpsProxyAgent = require('https-proxy-agent');
 var proxyConfig = [{
-  context: '/quality/getFilePath',
+  context: '/quality/processQualityData',
   target: 'http://localhost:9090',
   secure: false
 }];
